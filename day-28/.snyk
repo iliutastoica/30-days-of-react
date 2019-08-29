@@ -1,0 +1,29 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
+        patched: '2019-08-29T20:08:30.259Z'
+  'npm:extend:20180424':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-08-29T20:08:30.259Z'
+  'npm:hoek:20180212':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-08-29T20:08:30.259Z'
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-08-29T20:08:30.259Z'
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-08-29T20:08:30.259Z'
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-08-29T20:08:30.259Z'
+  'npm:ms:20170412':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > tar-pack > debug > ms:
+        patched: '2019-08-29T20:08:30.259Z'
+  'npm:stringstream:20180511':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-08-29T20:08:30.259Z'
+  'npm:tough-cookie:20170905':
+    - postcss-cli > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-08-29T20:08:30.259Z'
