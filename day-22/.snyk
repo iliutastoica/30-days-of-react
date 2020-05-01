@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -27,3 +27,8 @@ patch:
   'npm:tough-cookie:20170905':
     - postcss-cli > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
         patched: '2019-09-07T18:07:13.293Z'
+  SNYK-JS-LODASH-567746:
+    - react-redux > lodash:
+        patched: '2020-05-01T02:26:30.123Z'
+    - redux > lodash:
+        patched: '2020-05-01T02:26:30.123Z'
