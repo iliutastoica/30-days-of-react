@@ -27,19 +27,19 @@
     "vinyl-fs": "^2.4.4"
   },
   "dependencies": {
-    "autoprefixer": "^6.7.7",
+    "autoprefixer": "^9.0.0",
     "font-awesome": "^4.7.0",
     "moment": "^2.19.3",
     "postcss-cli": "^5.0.0",
-    "postcss-import": "^9.1.0",
-    "precss": "^1.4.0",
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "postcss-import": "^12.0.0",
+    "precss": "^4.0.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-frame-component": "^1.0.2",
     "react-redux": "^5.0.3",
     "react-router-dom": "^4.0.0",
     "redux": "^3.6.0",
-    "snyk": "^1.226.0"
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "npm-run-all -c --parallel start:*",
@@ -52,8 +52,8 @@
     "build:render": "node ./scripts/cqmd.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk-protect",
+    "prepublish": "yarn run snyk-protect"
   },
   "snyk": true
 }
